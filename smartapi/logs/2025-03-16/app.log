@@ -1,0 +1,210 @@
+[E 250316 10:08:08 fetch_data_gui:65] Fetching historical data failed: Couldn't parse the JSON response received from the server: b''
+    Traceback (most recent call last):
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 227, in _request
+        data = json.loads(r.content.decode("utf8"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+        return _default_decoder.decode(s)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+        raise JSONDecodeError("Expecting value", s, err.value) from None
+    json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\user\projects\angelalgo\smartapi\fetch_data_gui.py", line 61, in fetch_historical_data
+        historical_data = smart_api.getCandleData(historic_params)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 462, in getCandleData
+        getCandleDataResponse=self._postRequest("api.candle.data",historicDataParams)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 260, in _postRequest
+        return self._request(route, "POST", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 230, in _request
+        raise ex.DataException("Couldn't parse the JSON response received from the server: {content}".format(
+    SmartApi.smartExceptions.DataException: Couldn't parse the JSON response received from the server: b''
+[E 250316 11:37:30 fetch_data_gui:69] Fetching historical data failed. The response may be empty if no data is available or parameters are incorrect.
+    Traceback (most recent call last):
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 227, in _request
+        data = json.loads(r.content.decode("utf8"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+        return _default_decoder.decode(s)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+        raise JSONDecodeError("Expecting value", s, err.value) from None
+    json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\user\projects\angelalgo\smartapi\fetch_data_gui.py", line 65, in fetch_historical_data
+        historical_data = smart_api.getCandleData(historic_params)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 462, in getCandleData
+        getCandleDataResponse=self._postRequest("api.candle.data",historicDataParams)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 260, in _postRequest
+        return self._request(route, "POST", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 230, in _request
+        raise ex.DataException("Couldn't parse the JSON response received from the server: {content}".format(
+    SmartApi.smartExceptions.DataException: Couldn't parse the JSON response received from the server: b''
+[E 250316 11:53:53 fetch_data_gui:72] Fetching historical data failed. The response may be empty if no data is available or parameters are incorrect.
+    Traceback (most recent call last):
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 227, in _request
+        data = json.loads(r.content.decode("utf8"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+        return _default_decoder.decode(s)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+        raise JSONDecodeError("Expecting value", s, err.value) from None
+    json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\user\projects\angelalgo\smartapi\fetch_data_gui.py", line 68, in fetch_historical_data
+        historical_data = smart_api.getCandleData(historic_params)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 462, in getCandleData
+        getCandleDataResponse=self._postRequest("api.candle.data",historicDataParams)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 260, in _postRequest
+        return self._request(route, "POST", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 230, in _request
+        raise ex.DataException("Couldn't parse the JSON response received from the server: {content}".format(
+    SmartApi.smartExceptions.DataException: Couldn't parse the JSON response received from the server: b''
+[E 250316 12:10:01 fetch_data_gui:74] First attempt with token as is failed: Couldn't parse the JSON response received from the server: b''
+    Traceback (most recent call last):
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 227, in _request
+        data = json.loads(r.content.decode("utf8"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+        return _default_decoder.decode(s)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+        raise JSONDecodeError("Expecting value", s, err.value) from None
+    json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\user\projects\angelalgo\smartapi\fetch_data_gui.py", line 69, in fetch_historical_data
+        historical_data = smart_api.getCandleData(historic_params)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 462, in getCandleData
+        getCandleDataResponse=self._postRequest("api.candle.data",historicDataParams)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 260, in _postRequest
+        return self._request(route, "POST", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 230, in _request
+        raise ex.DataException("Couldn't parse the JSON response received from the server: {content}".format(
+    SmartApi.smartExceptions.DataException: Couldn't parse the JSON response received from the server: b''
+[E 250316 12:10:02 fetch_data_gui:85] Second attempt with token stripped failed: Couldn't parse the JSON response received from the server: b''
+    Traceback (most recent call last):
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 227, in _request
+        data = json.loads(r.content.decode("utf8"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+        return _default_decoder.decode(s)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+        raise JSONDecodeError("Expecting value", s, err.value) from None
+    json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\user\projects\angelalgo\smartapi\fetch_data_gui.py", line 81, in fetch_historical_data
+        historical_data = smart_api.getCandleData(historic_params)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 462, in getCandleData
+        getCandleDataResponse=self._postRequest("api.candle.data",historicDataParams)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 260, in _postRequest
+        return self._request(route, "POST", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 230, in _request
+        raise ex.DataException("Couldn't parse the JSON response received from the server: {content}".format(
+    SmartApi.smartExceptions.DataException: Couldn't parse the JSON response received from the server: b''
+[E 250316 12:18:34 fetch_data_gui:75] First attempt with token as is failed: Couldn't parse the JSON response received from the server: b''
+    Traceback (most recent call last):
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 227, in _request
+        data = json.loads(r.content.decode("utf8"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+        return _default_decoder.decode(s)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+        raise JSONDecodeError("Expecting value", s, err.value) from None
+    json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\user\projects\angelalgo\smartapi\fetch_data_gui.py", line 71, in fetch_historical_data
+        historical_data = smart_api.getCandleData(historic_params)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 462, in getCandleData
+        getCandleDataResponse=self._postRequest("api.candle.data",historicDataParams)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 260, in _postRequest
+        return self._request(route, "POST", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 230, in _request
+        raise ex.DataException("Couldn't parse the JSON response received from the server: {content}".format(
+    SmartApi.smartExceptions.DataException: Couldn't parse the JSON response received from the server: b''
+[E 250316 12:18:34 fetch_data_gui:86] Second attempt with token stripped failed: Couldn't parse the JSON response received from the server: b''
+    Traceback (most recent call last):
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 227, in _request
+        data = json.loads(r.content.decode("utf8"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+        return _default_decoder.decode(s)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+        raise JSONDecodeError("Expecting value", s, err.value) from None
+    json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\user\projects\angelalgo\smartapi\fetch_data_gui.py", line 82, in fetch_historical_data
+        historical_data = smart_api.getCandleData(historic_params)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 462, in getCandleData
+        getCandleDataResponse=self._postRequest("api.candle.data",historicDataParams)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 260, in _postRequest
+        return self._request(route, "POST", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\user\projects\angelalgo\venv\Lib\site-packages\SmartApi\smartConnect.py", line 230, in _request
+        raise ex.DataException("Couldn't parse the JSON response received from the server: {content}".format(
+    SmartApi.smartExceptions.DataException: Couldn't parse the JSON response received from the server: b''
