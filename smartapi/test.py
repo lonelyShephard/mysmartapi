@@ -2,18 +2,22 @@ import requests
 import json
 import os
 from logzero import logger
-from login import login
+from smartapi.login import login
 from dotenv import load_dotenv
 
 # ✅ Load environment variables from .env
 load_dotenv()
 
+# Set the path for the angelweb directory
+ANGELWEB_PATH = r"C:\Users\user\projects\angelweb"
+
 # ✅ Load auth_token from file if available
 def load_auth_token():
-    if os.path.exists("auth_token.json"):
-        with open("auth_token.json", "r") as file:
+    token_path = os.path.join(ANGELWEB_PATH, "auth_token.json")
+    if os.path.exists(token_path):
+        with open(token_path, "r") as file:
             data = json.load(file)
-            return data.get("auth_token")
+            return data.get("data").get("auth_token")
     return None
 
 # ✅ Validate auth_token before making API requests

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>Trading</h1>
+    {% if message %}
+    <p class="success">{{ message }}</p>
+    {% endif %}
+    <form method="POST">
+        <!-- Your trading form elements from place_order_core.py -->
+        <button type="submit">Place Order</button>
+    </form>
+</div>
+{% endblock %}

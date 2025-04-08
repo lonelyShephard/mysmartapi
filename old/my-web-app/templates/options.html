@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <h2>Select an option:</h2>
+        <ul>
+            <li><a href="/fetch_data">Historical Data</a></li>
+            <li><a href="/place_order">Place Order</a></li>
+            <li><a href="/live_stream">Live Stream</a></li>
+            <li><a href="/exit">Exit</a></li>
+        </ul>
+    </div>
+</body>
+</html>

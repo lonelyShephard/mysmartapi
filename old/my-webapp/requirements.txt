@@ -1,0 +1,7 @@
+Flask
+python-dotenv
+pyotp
+logzero
+SmartApi
+requests
+Jinja2

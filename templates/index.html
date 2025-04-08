@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>Login</h1>
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}
+    <form method="POST">
+        <label for="api_key">API Key:</label>
+        <input type="text" id="api_key" name="api_key" value="{{ default_env.API_KEY }}" required><br>
+
+        <label for="client_id">Client ID:</label>
+        <input type="text" id="client_id" name="client_id" value="{{ default_env.CLIENT_ID }}" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" value="{{ default_env.PASSWORD }}" required><br>
+
+        <label for="totp_secret">TOTP Secret:</label>
+        <input type="password" id="totp_secret" name="totp_secret" value="{{ default_env.SMARTAPI_TOTP_SECRET }}" required><br>
+
+        <button type="submit">Login</button>
+    </form>
+</div>
+{% endblock %}

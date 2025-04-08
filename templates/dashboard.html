@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>Dashboard</h1>
+    <a href="{{ url_for('trading') }}" class="button">Trading</a>
+    <a href="{{ url_for('historical') }}" class="button">Historical Data</a>
+    <a href="{{ url_for('streaming') }}" class="button">Live Streaming</a>
+    <a href="{{ url_for('logout_route') }}" class="button">Exit</a>
+</div>
+{% endblock %}
